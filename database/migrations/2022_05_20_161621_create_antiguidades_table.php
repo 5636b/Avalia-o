@@ -19,7 +19,8 @@ return new class extends Migration
             $table->string('tipo');
             $table->string('marca')->nullable();
             $table->integer('Fbano');
-            $table->decimal('preco', $precision = 3, $scale = 3);
+            $table->float('preco');
+            $table->integer('user_id');
         });
     }
 
@@ -33,5 +34,3 @@ return new class extends Migration
         Schema::dropIfExists('antiguidades');
     }
 };
-
-

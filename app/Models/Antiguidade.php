@@ -13,7 +13,8 @@ class Antiguidade extends Model
         'tipo',
         'marca',
         'Fbano',
-        'preco'
+        'preco',
+        'user_id'
     ];
 
     public function Old()

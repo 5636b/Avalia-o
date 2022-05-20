@@ -16,6 +16,7 @@ class AntiguidadeSeeder extends Seeder
      */
     public function run()
     {
+
         $user = User::factory()->create();
         Antiguidade::create([
             'tipo' => 'videogame',
