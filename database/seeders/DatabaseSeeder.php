@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Antiguidade;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -21,6 +22,6 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-        $this->call(DatabaseSeeder::class);
+        $this->call(AntiguidadeSeeder::class);
     }
 }
